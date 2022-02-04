@@ -1,0 +1,86 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+    @media (max-width: 1439px) {
+            row-gap: 48px;
+            column-gap: 48px;
+            justify-content: center;
+        }
+    @media (max-width: 1140px) {
+        margin-top: 24px;
+        row-gap: 16px;
+        column-gap: 16px;
+    }     
+    @media (max-width: 1092px) {
+        row-gap: 48px;
+        column-gap: 48px;
+    }
+    @media (max-width: 776px) {
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+    @media (max-width: 743px) {
+        margin-top: 48px;
+        row-gap: 48px;
+    }
+}
+
+.cards__item { 
+    position: relative;
+    max-width: 332px;
+    background: #fffefb;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 32px;
+    height: 32px;
+    background: #ff8484;
+    z-index: 10;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+
+.cards__picture {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.cards__container {
+    padding: 16px 16px 24px;
+}
+
+.cards__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.cards__text {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cards__price {
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.none {
+    display: none;
+}
